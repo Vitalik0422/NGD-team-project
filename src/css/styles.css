@@ -7,7 +7,8 @@
 /* Common styles */
 @import url('./reset.css');
 @import url('./base.css');
-
+/* UI styles */
+@import url('./ui/button.css');
 /* Sections style */
 @import url('./header.css');
 
