@@ -30,7 +30,8 @@
   }
 }
 
-.header-nav-list {
+.header-nav-list,
+.header-nav-item {
   display: none;
   @media screen and (min-width: 768px) {
     display: flex;

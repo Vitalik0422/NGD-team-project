@@ -6,25 +6,13 @@
           <use href="/images/icons.svg#company-logo"></use>
         </svg>
       </a>
-      <nav class="header-nav">
-        <ul class="header-nav-list">
-          <li class="header-nav-list">
-            <a href="#aboutus" class="header-nav-link">About us</a>
-          </li>
-          <li class="header-nav-list">
-            <a href="#benefits" class="header-nav-link">Benefits</a>
-          </li>
-          <li class="header-nav-list">
-            <a href="#gallery" class="header-nav-link">Gallery</a>
-          </li>
-          <li class="header-nav-list" class="header-nav-link">
-            <a href="#testimonials" class="header-nav-link">Testimonials</a>
-          </li>
-          <li class="header-nav-list">
-            <a href="#contacts" class="header-nav-link">Contacts</a>
-          </li>
-        </ul>
-      </nav>
+      <load
+        src="/partials/ui/menu.html"
+        navClass="header-nav"
+        listClass="header-nav-list"
+        itemClass="header-nav-item"
+        linkClass="header-nav-link"
+      />
     </div>
     <load src="/partials/ui/button.html" class="header-order-btn" />
     <button type="button" class="open-burger-btn">
