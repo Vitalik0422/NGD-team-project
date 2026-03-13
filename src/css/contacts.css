@@ -1,29 +1,30 @@
 .contacts-section {
   padding: 64px 0px;
-  margin: 0 auto;
-  background-color: rgb(255, 255, 255);
 }
 
-/* .contacts-container {
-  max-width: 355px
-} */
+.contacts-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 48px;
+}
 
+.contacts-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
 .contacts-subtitle {
- font-weight: 600;
- font-size: 16px;
- margin-bottom: 18px;
+  font-weight: 600;
+  font-size: 16px;
 }
 .contacts-title {
-  max-width: 335px;
-  font-family: "Sora", sans-serif;
+  font-family: 'Sora', sans-serif;
   font-size: 36px;
   line-height: 1.2;
   letter-spacing: -0.01em;
-  margin-bottom: 24px;
 }
 .contacts-text {
   font-size: 18px;
-  margin-bottom: 48px;
 }
 
 .contacts-wrapper {
@@ -31,37 +32,34 @@
   flex-direction: column;
   row-gap: 32px;
 }
-.contacts {
-  font-style: normal;
-}
+
 .contacts-list {
   display: flex;
   flex-direction: column;
   row-gap: 24px;
 }
 .contacts-list-item {
- 
-}
-.contacts-list-icon {
-  width: 32px;
-  height: 32px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  fill: rgb(0, 0, 0); 
-  margin-bottom: 16px;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.contacts-list-icon {
+  fill: rgb(0, 0, 0);
+}
+
+.contacts-item-text-thumb {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
 }
 .contacts-list-name {
-  font-family: "Sora", sans-serif;
+  font-family: 'Sora', sans-serif;
   font-size: 20px;
   line-height: 1.4;
   letter-spacing: -0.01em;
-  margin-bottom: 8px;
 }
-.contacts-list-link {
-  
 
-}
 .contacts-list-link:hover,
 .contacts-list-link:focus {
   text-decoration: underline;
@@ -75,8 +73,9 @@
   gap: 24px;
 }
 .order-form-label {
-  font-display: block;
-  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
 }
 .order-form-input {
   width: 100%;
@@ -95,7 +94,6 @@
   display: none;
   color: rgb(140, 0, 0);
   font-size: 12px;
-  margin-top: 8px;
 }
 .order-form-input:invalid:not(:placeholder-shown) + .input-error {
   display: block;
@@ -112,7 +110,7 @@
   height: 180px;
   padding: 12px;
   color: rgba(0, 0, 0, 0.6);
-  border: 1px solid rgba(0, 0, 0, 0.15);;
+  border: 1px solid rgba(0, 0, 0, 0.15);
   background-color: transparent;
   outline: transparent;
   resize: none;
