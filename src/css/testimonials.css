@@ -2,6 +2,10 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
+
+    @media screen and (min-width: 1440px) {
+        gap: 80px;
+    }
 }
 .testimonials-thumb {
     display: flex;
@@ -14,12 +18,23 @@
     font-size: 36px;
     line-height: 1.2;
     letter-spacing: -0.01em;
+
+    @media screen and (min-width: 1440px) {
+        font-size: 48px;
+    }
 }
 .section-text {
     text-align: center;
 }
 .testimonials-feedback-text {
     font-size: 18px;
+}
+.testimonials-text-icons {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
 }
 .testimonials-feedback-name {
     font-weight: 600;
@@ -31,6 +46,16 @@
     border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 32px;
     width: 100%;
+    background-color: rgb(242, 242, 242);
+
+    @media screen and (min-width: 768px) {
+        max-width: 250px;
+        height: 260px;
+        justify-content: space-between;
+    }
+    @media screen and (min-width: 1440px) {
+        min-width: 640px;
+    }
 }
 .testimonials-list {
     display: flex;
@@ -38,6 +63,14 @@
     gap: 24px;
     align-items: center;
     justify-content: center;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    @media screen and (min-width: 1440px) {
+        gap: 32px;
+    }
 }
 .testimonials-image {
     border: 1px solid rgba(0, 0, 0, 0.2);
@@ -45,4 +78,11 @@
     height: 260px;
     object-fit: cover;
     object-position: center top;
+
+    @media screen and (min-width: 768px) {
+        width: 203px;
+    }
+    @media screen and (min-width: 1440px) {
+        width: 304px;
+    }
 }
