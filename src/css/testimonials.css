@@ -52,12 +52,9 @@
         max-width: 250px;
         height: 260px;
         justify-content: space-between;
-        gap: 43px;
     }
     @media screen and (min-width: 1440px) {
         min-width: 640px;
-        height: 260px;
-        gap: 97px;
     }
 }
 .testimonials-list {
